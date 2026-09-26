@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Link Generator</title>
+<style>
+  body { font-family: sans-serif; padding: 20px; max-width: 500px; margin: auto; }
+  input, button { width: 100%; padding: 12px; margin: 8px 0; font-size: 16px; }
+  button { background: #0f172a; color: white; border: none; border-radius: 8px; }
+  #output { margin-top: 15px; word-break: break-all; background: #f1f5f9; padding: 12px; border-radius: 8px; }
+</style>
+</head>
+<body>
+  <h2>Portfolio Link Generator</h2>
+  <input id="username" type="text" placeholder="Enter your name, e.g. ananya sharma" />
+  <button onclick="generateLink()">Generate Link</button>
+  <div id="output"></div>
+
+<script>
+function generateLink() {
+  let name = document.getElementById('username').value.trim();
+  if (!name) {
+    alert('Please enter your')
